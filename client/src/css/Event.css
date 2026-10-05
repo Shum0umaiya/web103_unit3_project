@@ -1,57 +1,57 @@
-.event-information {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    padding: 0px;
-    margin: 20px;
-    border: 2px solid white;
-    border-radius: 0px;
-}
-
-.event-information img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.event-information-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: var(--primary);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: 0.5s ease;
-}
-
-.event-information:hover .event-information-overlay {
-    width: 100%;
-    left: 0;
-}
-
-.text {
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.text i {
-    margin-right: 10px;
-}
-
-.text p {
+.events-page {
+    min-height: 100vh;
+    padding: 50px;
     color: white;
-    margin-top: 10px;
 }
 
-.negative-time-remaining {
-    background-color: red;
-    color: white;
-    font-weight: 700;
-    padding: 10px;
+.events-heading {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.events-heading h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.events-heading p {
+    font-size: 18px;
+    color: #eeeeee;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.all-event-card {
+    background: rgba(20, 20, 35, 0.9);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.all-event-card h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.all-event-card p {
+    color: #eeeeee;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+.event-details strong {
+    color: #d96cff;
 }
